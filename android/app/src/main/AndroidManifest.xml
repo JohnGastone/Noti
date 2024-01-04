@@ -3,7 +3,7 @@
    <application
         android:label="noti"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/coinn">
         <activity
             android:name=".MainActivity"
             android:exported="true"
