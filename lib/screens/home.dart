@@ -10,15 +10,20 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          SizedBox(
+            height: 20,
+          ),
           SingleChildScrollView(
             child: Container(
               // height: 700,
-              padding: const EdgeInsets.only(top: 15, bottom: 15),
+              padding: const EdgeInsets.only(top: 5),
               decoration: const BoxDecoration(
                   color: Color(0xFFEDECF2),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(35),
-                      topRight: Radius.circular(35))),
+                      topRight: Radius.circular(35),
+                      bottomLeft: Radius.circular(35),
+                      bottomRight: Radius.circular(35))),
               child: Column(
                 children: [
                   Container(
@@ -39,7 +44,7 @@ class Home extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 10),
                             child: Text(
-                              'Add A Gift Card',
+                              'Add Expenditures Card',
                               style: TextStyle(
                                   color: Color(0xFF4C53A5),
                                   fontWeight: FontWeight.bold),
