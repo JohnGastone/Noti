@@ -20,8 +20,8 @@ class Home extends StatelessWidget {
             decoration: const BoxDecoration(
                 color: Color(0xFFEDECF2),
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(35),
-                    topRight: Radius.circular(35),
+                    // topLeft: Radius.circular(35),
+                    // topRight: Radius.circular(35),
                     bottomLeft: Radius.circular(35),
                     bottomRight: Radius.circular(35))),
           ),
