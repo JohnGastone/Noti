@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
           SingleChildScrollView(
             child: Container(
               // height: 700,
-              padding: const EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15, bottom: 15),
               decoration: const BoxDecoration(
                   color: Color(0xFFEDECF2),
                   borderRadius: BorderRadius.only(
