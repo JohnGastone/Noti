@@ -40,23 +40,27 @@ class Home extends StatelessWidget {
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ))),
-              Column(
-                children: [
-                  Text(
-                    'Good afternoon',
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.white),
-                  ),
-                  Text(
-                    'Mshua Masta',
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w400,
-                        color: Color.fromARGB(255, 238, 232, 232)),
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.only(top: 30, left: 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Good afternoon',
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white),
+                    ),
+                    Text(
+                      'Mshua Masta',
+                      style: TextStyle(
+                          fontSize: 23,
+                          fontWeight: FontWeight.w400,
+                          color: Color.fromARGB(255, 238, 232, 232)),
+                    )
+                  ],
+                ),
               )
             ]),
           ),
