@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
                 height: 240,
                 padding: const EdgeInsets.only(top: 5),
                 decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 118, 205, 167),
+                    color: Color.fromARGB(255, 73, 168, 127),
                     borderRadius: BorderRadius.only(
                         // topLeft: Radius.circular(35),
                         // topRight: Radius.circular(35),
