@@ -75,8 +75,23 @@ class Home extends StatelessWidget {
               height: 170,
               width: 300,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 156, 236, 200),
+                  color: Color.fromARGB(255, 78, 153, 119),
                   borderRadius: BorderRadius.circular(15)),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'Total Balance',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromARGB(255, 238, 232, 232)),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           )
         ]),
