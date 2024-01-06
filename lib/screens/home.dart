@@ -75,6 +75,13 @@ class Home extends StatelessWidget {
               height: 190,
               width: 300,
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromARGB(255, 73, 168, 127),
+                        offset: Offset(0, 6),
+                        blurRadius: 12,
+                        spreadRadius: 6)
+                  ],
                   color: Color.fromARGB(255, 78, 153, 119),
                   borderRadius: BorderRadius.circular(15)),
               child: Column(
