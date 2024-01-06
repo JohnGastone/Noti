@@ -159,36 +159,66 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 18, vertical: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Tsh 1,500,000/=',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color.fromARGB(255, 238, 232, 232)),
-                            ),
-                          ],
+                        Text(
+                          'Tsh 1,500,000/=',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                              color: Color.fromARGB(255, 238, 232, 232)),
                         ),
-                        Spacer(),
-                        Row(
-                          children: [
-                            Text(
-                              'Tsh 760,000/=',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color.fromARGB(255, 238, 232, 232)),
-                            ),
-                          ],
-                        )
+                        Text(
+                          'Tsh 760,000/=',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                              color: Color.fromARGB(255, 238, 232, 232)),
+                        ),
                       ],
                     ),
                   ),
+                  // Padding(
+                  //   padding: const EdgeInsets.symmetric(
+                  //       horizontal: 18, vertical: 16),
+                  //   child: Row(
+                  //     children: [
+                  //       Row(
+                  //         children: [
+                  //           Text(
+                  //             'Tsh 1,500,000/=',
+                  //             style: TextStyle(
+                  //                 fontSize: 15,
+                  //                 fontWeight: FontWeight.w600,
+                  //                 color: Color.fromARGB(255, 238, 232, 232)),
+                  //           ),
+                  //           Text(
+                  //             'Tsh 760,000/=',
+                  //             style: TextStyle(
+                  //                 fontSize: 15,
+                  //                 fontWeight: FontWeight.w600,
+                  //                 color: Color.fromARGB(255, 238, 232, 232)),
+                  //           ),
+
+                  //         ],
+                  //       ),
+                  //       Spacer(),
+                  //       Row(
+                  //         children: [
+                  //           Text(
+                  //             'Tsh 760,000/=',
+                  //             style: TextStyle(
+                  //                 fontSize: 15,
+                  //                 fontWeight: FontWeight.w600,
+                  //                 color: Color.fromARGB(255, 238, 232, 232)),
+                  //           ),
+                  //         ],
+                  //       )
+                  //     ],
+                  //   ),
+                  // ),
                 ],
               ),
             ),
