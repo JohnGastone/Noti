@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                           'Total Balance',
                           style: TextStyle(
                               fontSize: 20,
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w300,
                               color: Color.fromARGB(255, 238, 232, 232)),
                         ),
                         Spacer(),
@@ -103,19 +103,61 @@ class Home extends StatelessWidget {
                     height: 3,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    padding: const EdgeInsets.only(left: 15),
                     child: Row(
                       children: [
                         Text(
                           'Tsh 40,0000,000/=',
                           style: TextStyle(
                               fontSize: 18,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w600,
                               color: Color.fromARGB(255, 238, 232, 232)),
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 2,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 18, vertical: 16),
+                    child: Row(
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.arrow_circle_up_sharp,
+                              color: Colors.white,
+                            ),
+                            Text(
+                              'Income',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w300,
+                                  color: Color.fromARGB(255, 238, 232, 232)),
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        Row(
+                          children: [
+                            Text(
+                              'Expenses',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w300,
+                                  color: Color.fromARGB(255, 238, 232, 232)),
+                            ),
+                            Icon(
+                              Icons.arrow_circle_down_sharp,
+                              color: Colors.white,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
