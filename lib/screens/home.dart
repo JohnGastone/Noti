@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
             top: 150,
             left: 30,
             child: Container(
-              height: 230,
+              height: 190,
               width: 300,
               decoration: BoxDecoration(
                   color: Color.fromARGB(255, 78, 153, 119),
