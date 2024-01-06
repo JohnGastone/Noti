@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
             top: 150,
             left: 30,
             child: Container(
-              height: 170,
+              height: 230,
               width: 300,
               decoration: BoxDecoration(
                   color: Color.fromARGB(255, 78, 153, 119),
@@ -152,6 +152,37 @@ class Home extends StatelessWidget {
                             Icon(
                               Icons.arrow_circle_down_sharp,
                               color: Colors.white,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 18, vertical: 16),
+                    child: Row(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              'Tsh 1,500,000/=',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromARGB(255, 238, 232, 232)),
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        Row(
+                          children: [
+                            Text(
+                              'Tsh 760,000/=',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromARGB(255, 238, 232, 232)),
                             ),
                           ],
                         )
