@@ -37,7 +37,7 @@ class Home extends StatelessWidget {
                             width: 40,
                             color: Color.fromARGB(255, 156, 236, 200),
                             child: Icon(
-                              Icons.notification_add_outlined,
+                              Icons.notifications,
                               size: 30,
                               color: Color.fromARGB(255, 255, 255, 255),
                             ),
