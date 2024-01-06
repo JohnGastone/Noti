@@ -99,6 +99,23 @@ class Home extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 3,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Tsh 40,0000,000/=',
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w300,
+                              color: Color.fromARGB(255, 238, 232, 232)),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
