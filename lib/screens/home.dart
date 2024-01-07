@@ -11,7 +11,14 @@ class Home extends StatelessWidget {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return Scaffold(
       body: SafeArea(
-        child: Stack(children: [
+        child: 
+        ),
+      
+    );
+  }
+Widget _head(){
+  return Stack(
+    children: [
           SizedBox(
             height: 50,
           ),
@@ -232,8 +239,7 @@ class Home extends StatelessWidget {
               ),
             ),
           )
-        ]),
-      ),
-    );
-  }
+        ],);
+}
+
 }
