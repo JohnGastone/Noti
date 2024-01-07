@@ -14,11 +14,33 @@ class Home extends StatelessWidget {
           child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: _head(),
+            child: SizedBox(
+              height: 350,
+              child: _head(),
+            ),
           ),
           SliverToBoxAdapter(
-            child: Row(
-              children: [],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Transaction History',
+                    style: TextStyle(
+                        fontSize: 19,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
+                  ),
+                  Text(
+                    'See All',
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Color.fromARGB(255, 119, 111, 111)),
+                  )
+                ], //Here we add +++
+              ),
             ),
           )
         ],
