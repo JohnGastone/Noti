@@ -10,7 +10,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return Scaffold(
-      body: SafeArea(child: _head()),
+      body: SafeArea(
+          child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: _head(),
+          ),
+          SliverToBoxAdapter(
+            child: Row(
+              children: [],
+            ),
+          )
+        ],
+      )),
     );
   }
 
