@@ -38,6 +38,9 @@ class Home extends StatelessWidget {
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
                         color: Color.fromARGB(255, 119, 111, 111)),
+                  ),
+                  ListView(
+                    scrollDirection: Axis.vertical,
                   )
                 ], //Here we add +++
               ),
@@ -80,7 +83,7 @@ class Home extends StatelessWidget {
                           child: Icon(
                             Icons.notifications,
                             size: 30,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(255, 47, 180, 35),
                           ),
                         ))),
                 Padding(
@@ -175,7 +178,7 @@ class Home extends StatelessWidget {
                       Row(
                         children: [
                           Icon(
-                            Icons.arrow_circle_up_sharp,
+                            Icons.arrow_circle_down_sharp,
                             color: Colors.white,
                           ),
                           Text(
@@ -198,7 +201,7 @@ class Home extends StatelessWidget {
                                 color: Color.fromARGB(255, 238, 232, 232)),
                           ),
                           Icon(
-                            Icons.arrow_circle_down_sharp,
+                            Icons.arrow_circle_up_sharp,
                             color: Colors.white,
                           ),
                         ],
