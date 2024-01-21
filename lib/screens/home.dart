@@ -39,13 +39,33 @@ class Home extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         color: Color.fromARGB(255, 119, 111, 111)),
                   ),
-                  ListView(
-                    scrollDirection: Axis.vertical,
-                  )
+                  // ListView(
+                  //   scrollDirection: Axis.vertical,
+                  // )
                 ], //Here we add +++
               ),
             ),
-          )
+          ),
+          SliverList(delegate: SliverChildBuilderDelegate(((context, index) {
+            return ListTile(
+                leading: ClipRRect(
+                  borderRadius: BorderRadius.circular(5),
+                  // child: Image.asset('images/${getter()[index].image!}'),
+                ),
+                title: Text(
+                  'Wire transfer',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                ),
+                subtitle: Text(
+                  'Today',
+                  style: TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
+                ),
+                trailing: Text('Tsh 750,000/=',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: Color.fromARGB(255, 73, 168, 127),
+                    )));
+          })))
         ],
       )),
     );
