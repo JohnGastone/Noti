@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:noti/data/listData.dart';
+// import 'package:noti/data/data.dart'
 
 class Home extends StatelessWidget {
   const Home({super.key});

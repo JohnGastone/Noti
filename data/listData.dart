@@ -1,13 +1,13 @@
-import 'package:noti/data/list.dart';
+// ignore_for_file: file_names
 
 import 'list.dart';
 
 List<money> geter() {
   money upwork = money();
   upwork.name = 'Upwork';
-  upwork.buyPrice = 20;
+  upwork.buy = 20;
   upwork.fee = '500';
-  upwork.image = 'coin.png';
+  upwork.image = 'upwork.png';
   upwork.time = 'Yesterday';
   return [upwork];
 }
