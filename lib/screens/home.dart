@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
             return ListTile(
                 leading: ClipRRect(
                   borderRadius: BorderRadius.circular(5),
-                  child: Image.asset('images/1.jpeg'),
+                  child: Image.asset('images/upwork.png'),
                 ),
                 title: Text(
                   'Wire transfer',
