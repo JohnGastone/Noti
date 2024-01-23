@@ -22,10 +22,10 @@ class _ChartState extends State<Chart> {
             // ignore: missing_required_param
             SplineSeries<SalesData, String>(
               dataSource: <SalesData>[
-                SalesData(100, 'Mon'),
+                SalesData(35, 'Mon'),
                 SalesData(120, 'Tue'),
                 SalesData(85, 'Wed'),
-                SalesData(97, 'Thu'),
+                SalesData(150, 'Thu'),
                 SalesData(100, 'Fri'),
                 SalesData(200, 'Sat'),
                 SalesData(250, 'Sun'),
