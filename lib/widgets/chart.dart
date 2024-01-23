@@ -19,7 +19,7 @@ class _ChartState extends State<Chart> {
         height: 300,
         child: SfCartesianChart(
           primaryXAxis: CategoryAxis(),
-          series: SplineSeries<><>),
+          series: const <SplineSeries<SalesData, String>>[],
         ),
       ),
     );
