@@ -13,8 +13,7 @@ class Chart extends StatefulWidget {
 class _ChartState extends State<Chart> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         width: double.infinity,
         height: 300,
         child: SfCartesianChart(
@@ -35,9 +34,7 @@ class _ChartState extends State<Chart> {
               yValueMapper: (SalesData sales, _) => sales.sales,
             ),
           ],
-        ),
-      ),
-    );
+        ));
   }
 }
 
