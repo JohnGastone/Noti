@@ -63,7 +63,7 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.18.1",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -129,15 +129,15 @@
     },
     {
       "name": "syncfusion_flutter_charts",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/syncfusion_flutter_charts-18.4.49",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/syncfusion_flutter_charts-19.1.54",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "syncfusion_flutter_core",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/syncfusion_flutter_core-18.4.49",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/syncfusion_flutter_core-19.1.54",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "term_glyph",
@@ -164,7 +164,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-01-23T05:49:41.029388Z",
+  "generated": "2024-01-23T07:06:45.320349Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
