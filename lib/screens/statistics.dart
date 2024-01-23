@@ -100,7 +100,22 @@ class _StatisticsState extends State<Statistics> {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Chart()
+                  Chart(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Top Spending',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w700),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
