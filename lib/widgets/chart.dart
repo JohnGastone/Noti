@@ -17,8 +17,17 @@ class _ChartState extends State<Chart> {
       body: Container(
         width: double.infinity,
         height: 300,
-        child: SfCartesianChart(),
+        child: SfCartesianChart(
+          primaryXAxis: CategoryAxis(),
+          series: SplineSeries<><>),
+        ),
       ),
     );
   }
+}
+
+class SalesData {
+  SalesData(this.sales, this.year);
+  final String year;
+  final String sales;
 }
