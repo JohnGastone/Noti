@@ -19,7 +19,22 @@ class _ChartState extends State<Chart> {
         height: 300,
         child: SfCartesianChart(
           primaryXAxis: CategoryAxis(),
-          series: const <SplineSeries<SalesData, String>>[],
+          series: <SplineSeries<SalesData, String>>[
+            // ignore: missing_required_param
+            SplineSeries<SalesData, String>(
+              dataSource: <SalesData>[
+                SalesData(100, 'Mon'),
+                SalesData(120, 'Tue'),
+                SalesData(85, 'Wed'),
+                SalesData(97, 'Thu'),
+                SalesData(100, 'Fri'),
+                SalesData(200, 'Sat'),
+                SalesData(250, 'Sun'),
+              ],
+              xValueMapper: (SalesData sales, _) => sales.year,
+              yValueMapper: (SalesData sales, _) => sales.sales,
+            ),
+          ],
         ),
       ),
     );
@@ -29,5 +44,5 @@ class _ChartState extends State<Chart> {
 class SalesData {
   SalesData(this.sales, this.year);
   final String year;
-  final String sales;
+  final int sales;
 }
