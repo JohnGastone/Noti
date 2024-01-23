@@ -105,13 +105,19 @@ class _StatisticsState extends State<Statistics> {
                     height: 20,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           'Top Spending',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.w700),
+                        ),
+                        Icon(
+                          Icons.swap_vert,
+                          size: 25,
+                          color: Colors.grey,
                         )
                       ],
                     ),
