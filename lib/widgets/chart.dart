@@ -1,4 +1,4 @@
-// ignore_for_file: sized_box_for_whitespace
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
@@ -21,6 +21,7 @@ class _ChartState extends State<Chart> {
           series: <SplineSeries<SalesData, String>>[
             // ignore: missing_required_param
             SplineSeries<SalesData, String>(
+              color: Color.fromARGB(255, 73, 168, 127),
               dataSource: <SalesData>[
                 SalesData(35, 'Mon'),
                 SalesData(120, 'Tue'),
