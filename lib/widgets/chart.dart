@@ -17,7 +17,7 @@ class _ChartState extends State<Chart> {
       body: Container(
         width: double.infinity,
         height: 300,
-        child: SFCartesianChart(),
+        child: SfCartesianChart(),
       ),
     );
   }
