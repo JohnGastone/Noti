@@ -22,6 +22,7 @@ class _ChartState extends State<Chart> {
             // ignore: missing_required_param
             SplineSeries<SalesData, String>(
               color: Color.fromARGB(255, 73, 168, 127),
+              width: 3,
               dataSource: <SalesData>[
                 SalesData(35, 'Mon'),
                 SalesData(120, 'Tue'),
