@@ -6,6 +6,5 @@ List<money> geter() {
   upwork.name = 'Upwork';
   upwork.time = 'Yesterday';
   upwork.fee = '500';
-  upwork.buy = 20;
   return [upwork];
 }
