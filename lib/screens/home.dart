@@ -47,27 +47,37 @@ class Home extends StatelessWidget {
               ),
             ),
           ),
-          SliverList(delegate: SliverChildBuilderDelegate(((context, index) {
-            return ListTile(
-                leading: ClipRRect(
-                  borderRadius: BorderRadius.circular(5),
-                  child: Image.asset('images/${geter()[index].image!}',
-                      height: 40),
-                ),
-                title: Text(
-                  geter()[index].name!,
-                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
-                ),
-                subtitle: Text(
-                  geter()[index].time!,
-                  style: TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
-                ),
-                trailing: Text(geter()[index].fee!,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(255, 73, 168, 127),
-                    )));
-          })))
+          SliverList(
+              delegate: SliverChildBuilderDelegate(
+            (context, index) {
+              List<money> moneyList = geter();
+              if (index < moneyList.length) {
+                money item = moneyList[index];
+                return ListTile(
+                  leading: ClipRRect(
+                    borderRadius: BorderRadius.circular(5),
+                    child: Image.asset('images/${item.image}', height: 40),
+                  ),
+                  title: Text(
+                    item.name!,
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                  ),
+                  subtitle: Text(
+                    item.time!,
+                    style: TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
+                  ),
+                  trailing: Text(item.fee!,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromARGB(255, 73, 168, 127),
+                      )),
+                );
+              }
+              return null;
+            },
+            childCount:
+                geter().length, // Ensure we don't exceed the list's length
+          ))
         ],
       )),
     );
