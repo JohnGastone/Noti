@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -48,31 +48,25 @@ class Home extends StatelessWidget {
             ),
           ),
           SliverList(delegate: SliverChildBuilderDelegate(((context, index) {
-            final items = geter();
-            if (index < items.length) {
-              return ListTile(
-                  leading: ClipRRect(
-                    borderRadius: BorderRadius.circular(5),
-                    child: Image.asset('images/${geter()[index].image!}',
-                        height: 40),
-                  ),
-                  title: Text(
-                    'Wire transfer',
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
-                  ),
-                  subtitle: Text(
-                    'Today',
-                    style: TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
-                  ),
-                  trailing: Text('Tsh 750,000/=',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 73, 168, 127),
-                      )));
-            } else {
-              return SizedBox
-                  .shrink(); // or return an empty widget if the index is out of bounds
-            }
+            return ListTile(
+                leading: ClipRRect(
+                  borderRadius: BorderRadius.circular(5),
+                  child: Image.asset('images/${geter()[index].image!}',
+                      height: 40),
+                ),
+                title: Text(
+                  geter()[index].name!,
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                ),
+                subtitle: Text(
+                  geter()[index].time!,
+                  style: TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
+                ),
+                trailing: Text(geter()[index].fee!,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: Color.fromARGB(255, 73, 168, 127),
+                    )));
           })))
         ],
       )),
