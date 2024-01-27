@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       routes: {
-        "/": ((context) => Statistics()),
+        "/": ((context) => Home()),
         // "cartPage": ((context) => const cartPage()),
         // "itemPage": ((context) => ItemPage()),
         // "favoritePage": ((context) => const FavoriteItems())
