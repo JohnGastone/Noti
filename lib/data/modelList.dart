@@ -3,5 +3,4 @@ class money {
   String? name;
   String? time;
   String? fee;
-  double? buy;
 }
