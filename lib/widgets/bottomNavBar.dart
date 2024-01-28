@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:noti/screens/add.dart';
 import 'package:noti/screens/home.dart';
 import 'package:noti/screens/statistics.dart';
 
@@ -19,7 +20,10 @@ class _BottomState extends State<Bottom> {
     return Scaffold(
       body: screen[index_color],
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: ((context) => Add_Screen())));
+        },
         child: Icon(Icons.add),
         backgroundColor: Color.fromARGB(255, 73, 168, 127),
       ),
