@@ -13,7 +13,7 @@ class _Add_ScreenState extends State<Add_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: Colors.grey.shade300,
       body: SafeArea(
           child: Stack(
         alignment: Alignment.center,
