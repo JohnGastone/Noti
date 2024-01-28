@@ -10,6 +10,13 @@ class Add_Screen extends StatefulWidget {
 }
 
 class _Add_ScreenState extends State<Add_Screen> {
+  String? selectedItem;
+  final List<String> _item = [
+    "Food",
+    "Transfer"
+        "Transportation",
+    "Education",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,17 +34,39 @@ class _Add_ScreenState extends State<Add_Screen> {
                   borderRadius: BorderRadius.circular(20), color: Colors.white),
               height: 550,
               width: 300,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 50,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Container(
+                      width: 250,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        border: Border.all(width: 2, color: Colors.grey)),
-                  )
-                ],
+                        border: Border.all(width: 2, color: Colors.grey),
+                      ),
+                      child: DropdownButton<String>(
+                        items: _item
+                            .map((e) => DropdownMenuItem(
+                                  child: Container(),
+                                  value: e,
+                                ))
+                            .toList(),
+                        hint: Text(
+                          "Select",
+                          style: TextStyle(fontSize: 15, color: Colors.black54),
+                        ),
+                        onChanged: (((value) {
+                          setState(() {
+                            selectedItem = value!;
+                          });
+                        })),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           )
