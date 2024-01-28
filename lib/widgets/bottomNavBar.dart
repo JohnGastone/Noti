@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:noti/screens/home.dart';
+import 'package:noti/screens/statistics.dart';
 
 class Bottom extends StatefulWidget {
   const Bottom({super.key});
@@ -10,9 +12,12 @@ class Bottom extends StatefulWidget {
 }
 
 class _BottomState extends State<Bottom> {
+  int index_color = 0;
+  List screen = [Home(), Statistics(), Home(), Statistics()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: screen[index_color],
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.add),
@@ -26,18 +31,30 @@ class _BottomState extends State<Bottom> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                setState(() {
+                  index_color = 0;
+                });
+              },
               child: Icon(
                 Icons.home,
-                color: Color.fromARGB(255, 73, 168, 127),
+                color: index_color == 0
+                    ? Color.fromARGB(255, 73, 168, 127)
+                    : Colors.grey,
                 size: 30,
               ),
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                setState(() {
+                  index_color = 1;
+                });
+              },
               child: Icon(
                 Icons.bar_chart_outlined,
-                color: Color.fromARGB(255, 73, 168, 127),
+                color: index_color == 1
+                    ? Color.fromARGB(255, 73, 168, 127)
+                    : Colors.grey,
                 size: 30,
               ),
             ),
@@ -45,18 +62,30 @@ class _BottomState extends State<Bottom> {
               width: 20,
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                setState(() {
+                  index_color = 2;
+                });
+              },
               child: Icon(
                 Icons.account_balance_wallet_outlined,
-                color: Color.fromARGB(255, 73, 168, 127),
+                color: index_color == 2
+                    ? Color.fromARGB(255, 73, 168, 127)
+                    : Colors.grey,
                 size: 30,
               ),
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                setState(() {
+                  index_color = 3;
+                });
+              },
               child: Icon(
                 Icons.person_outline,
-                color: Color.fromARGB(255, 73, 168, 127),
+                color: index_color == 3
+                    ? Color.fromARGB(255, 73, 168, 127)
+                    : Colors.grey,
                 size: 30,
               ),
             ),
