@@ -19,6 +19,16 @@ class _BottomState extends State<Bottom> {
         backgroundColor: Color.fromARGB(255, 73, 168, 127),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+          child: Row(
+        children: [
+          Icon(
+            Icons.home,
+            color: Color.fromARGB(255, 73, 168, 127),
+            size: 18,
+          ),
+        ],
+      )),
     );
   }
 }
