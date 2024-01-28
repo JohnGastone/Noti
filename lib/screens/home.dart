@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -56,7 +56,11 @@ class Home extends StatelessWidget {
                 return ListTile(
                   leading: ClipRRect(
                     borderRadius: BorderRadius.circular(5),
-                    child: Image.asset('images/${item.image}', height: 40),
+                    child: Image.asset(
+                      'images/${item.image}',
+                      height: 100,
+                      width: 80,
+                    ),
                   ),
                   title: Text(
                     item.name!,
@@ -311,12 +315,37 @@ class Home extends StatelessWidget {
   }
 
   List<money> geter() {
-    money upwork = money();
-    upwork.image = 'upwork.png';
-    upwork.name = 'Upwork';
-    upwork.time = 'Yesterday';
-    upwork.fee = '500';
-    return [upwork];
+    money Upwork = money();
+    Upwork.image = 'upwork.png';
+    Upwork.name = 'Upwork fee';
+    Upwork.time = 'Yesterday';
+    Upwork.fee = '15,000';
+    money Fare = money();
+    Fare.image = 'upwork.png';
+    Fare.name = 'Internet';
+    Fare.time = 'Yesterday';
+    Fare.fee = '75,000';
+    money Internet = money();
+    Internet.image = 'coin.png';
+    Internet.name = 'Fare';
+    Internet.time = '22th January';
+    Internet.fee = '100,000';
+    money Vegertables = money();
+    Vegertables.image = '3.jpeg';
+    Vegertables.name = 'Vegetables';
+    Vegertables.time = '20th January';
+    Vegertables.fee = '6,000';
+    money Vacation = money();
+    Vacation.image = '6.jpeg';
+    Vacation.name = 'Vacation';
+    Vacation.time = '12th January';
+    Vacation.fee = '1,500,000';
+    money rent = money();
+    rent.image = '1.jpeg';
+    rent.name = 'House Rent';
+    rent.time = '30th December';
+    rent.fee = '1,000,000';
+    return [Upwork, Fare, Internet, Vegertables, Vacation, rent];
   }
 }
 

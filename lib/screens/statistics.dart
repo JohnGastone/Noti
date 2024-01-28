@@ -125,6 +125,43 @@ class _StatisticsState extends State<Statistics> {
                 ],
               ),
             ),
+            SliverList(
+                delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                List<money> moneyList = geter();
+                if (index < moneyList.length) {
+                  money item = moneyList[index];
+                  return ListTile(
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(5),
+                      child: Image.asset(
+                        'images/${item.image}',
+                        height: 100,
+                        width: 80,
+                      ),
+                    ),
+                    title: Text(
+                      item.name!,
+                      style:
+                          TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                    ),
+                    subtitle: Text(
+                      item.time!,
+                      style:
+                          TextStyle(fontWeight: FontWeight.w300, fontSize: 12),
+                    ),
+                    trailing: Text(item.fee!,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromARGB(255, 73, 168, 127),
+                        )),
+                  );
+                }
+                return null;
+              },
+              childCount:
+                  geter().length, // Ensure we don't exceed the list's length
+            ))
             // SliverList(delegate: SliverChildBuilderDelegate(((context, index) {
             //   return ListTile(
             //     leading: Image.asset('images/'),
@@ -135,4 +172,52 @@ class _StatisticsState extends State<Statistics> {
       ),
     );
   }
+}
+
+List<money> geter() {
+  money Upwork = money();
+  Upwork.image = 'upwork.png';
+  Upwork.name = 'Upwork fee';
+  Upwork.time = 'Yesterday';
+  Upwork.fee = '15,000';
+  money Fare = money();
+  Fare.image = 'coin.png';
+  Fare.name = 'Fare';
+  Fare.time = 'Yesterday';
+  Fare.fee = '100,000';
+  money Internet = money();
+  Internet.image = 'upwork.png';
+  Internet.name = 'Internet';
+  Internet.time = '12th January';
+  Internet.fee = '75,000';
+  money Vegertables = money();
+  Vegertables.image = '3.jpeg';
+  Vegertables.name = 'Vegetables';
+  Vegertables.time = '12th January';
+  Vegertables.fee = '6,000';
+  money Vacation = money();
+  Vacation.image = '6.jpeg';
+  Vacation.name = 'Vacation';
+  Vacation.time = '12th January';
+  Vacation.fee = '1,500,000';
+  money rent = money();
+  rent.image = '1.jpeg';
+  rent.name = 'House Rent';
+  rent.time = '30th December';
+  rent.fee = '1,000,000';
+  return [
+    Vacation,
+    rent,
+    Fare,
+    Internet,
+    Upwork,
+    Vegertables,
+  ];
+}
+
+class money {
+  String? image;
+  String? name;
+  String? time;
+  String? fee;
 }
