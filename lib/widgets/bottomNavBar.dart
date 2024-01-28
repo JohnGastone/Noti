@@ -20,42 +20,48 @@ class _BottomState extends State<Bottom> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-          child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          GestureDetector(
-            onTap: () {},
-            child: Icon(
-              Icons.home,
-              color: Color.fromARGB(255, 73, 168, 127),
-              size: 30,
+          child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.home,
+                color: Color.fromARGB(255, 73, 168, 127),
+                size: 30,
+              ),
             ),
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: Icon(
-              Icons.bar_chart_outlined,
-              color: Color.fromARGB(255, 73, 168, 127),
-              size: 30,
+            GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.bar_chart_outlined,
+                color: Color.fromARGB(255, 73, 168, 127),
+                size: 30,
+              ),
             ),
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: Icon(
-              Icons.account_balance_wallet_outlined,
-              color: Color.fromARGB(255, 73, 168, 127),
-              size: 30,
+            SizedBox(
+              width: 20,
             ),
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: Icon(
-              Icons.person_outline,
-              color: Color.fromARGB(255, 73, 168, 127),
-              size: 30,
+            GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.account_balance_wallet_outlined,
+                color: Color.fromARGB(255, 73, 168, 127),
+                size: 30,
+              ),
             ),
-          ),
-        ],
+            GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.person_outline,
+                color: Color.fromARGB(255, 73, 168, 127),
+                size: 30,
+              ),
+            ),
+          ],
+        ),
       )),
     );
   }
