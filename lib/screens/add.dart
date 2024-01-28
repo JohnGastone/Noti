@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 
@@ -13,8 +13,8 @@ class _Add_ScreenState extends State<Add_Screen> {
   String? selectedItem;
   final List<String> _item = [
     "Food",
-    "Transfer"
-        "Transportation",
+    "Transfer",
+    "Transportation",
     "Education",
   ];
   @override
@@ -42,6 +42,7 @@ class _Add_ScreenState extends State<Add_Screen> {
                       height: 50,
                     ),
                     Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
                       width: 250,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -50,7 +51,23 @@ class _Add_ScreenState extends State<Add_Screen> {
                       child: DropdownButton<String>(
                         items: _item
                             .map((e) => DropdownMenuItem(
-                                  child: Container(),
+                                  child: Container(
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          width: 40,
+                                          child: Image.asset('images/&{e}.png'),
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Text(
+                                          e,
+                                          style: TextStyle(fontSize: 18),
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                   value: e,
                                 ))
                             .toList(),
@@ -58,6 +75,9 @@ class _Add_ScreenState extends State<Add_Screen> {
                           "Select",
                           style: TextStyle(fontSize: 15, color: Colors.black54),
                         ),
+                        dropdownColor: Colors.white,
+                        isExpanded: true,
+                        underline: Container(),
                         onChanged: (((value) {
                           setState(() {
                             selectedItem = value!;
