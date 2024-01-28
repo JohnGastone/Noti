@@ -27,6 +27,18 @@ class _Add_ScreenState extends State<Add_Screen> {
                   borderRadius: BorderRadius.circular(20), color: Colors.white),
               height: 550,
               width: 300,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(width: 2, color: Colors.grey)),
+                  )
+                ],
+              ),
             ),
           )
         ],
