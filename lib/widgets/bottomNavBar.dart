@@ -21,11 +21,39 @@ class _BottomState extends State<Bottom> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
           child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
-            Icons.home,
-            color: Color.fromARGB(255, 73, 168, 127),
-            size: 18,
+          GestureDetector(
+            onTap: () {},
+            child: Icon(
+              Icons.home,
+              color: Color.fromARGB(255, 73, 168, 127),
+              size: 30,
+            ),
+          ),
+          GestureDetector(
+            onTap: () {},
+            child: Icon(
+              Icons.bar_chart_outlined,
+              color: Color.fromARGB(255, 73, 168, 127),
+              size: 30,
+            ),
+          ),
+          GestureDetector(
+            onTap: () {},
+            child: Icon(
+              Icons.account_balance_wallet_outlined,
+              color: Color.fromARGB(255, 73, 168, 127),
+              size: 30,
+            ),
+          ),
+          GestureDetector(
+            onTap: () {},
+            child: Icon(
+              Icons.person_outline,
+              color: Color.fromARGB(255, 73, 168, 127),
+              size: 30,
+            ),
           ),
         ],
       )),
